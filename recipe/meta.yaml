@@ -1,5 +1,5 @@
 {% set name = "nionswift-eels-analysis" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e16422995ad1053b21a56662c4e17387dba40cea13982e2f0bf55ea3c72dabe2
+  sha256: f56f2e15b14533652ee57a0d8d6ab90f1851c4be9d31147db304481a3f7e5725
 
 build:
   number: 0
