@@ -1,6 +1,6 @@
-{% set python_min = '3.11' %}
+{% set python_min = "3.11" %}
 {% set name = "nionswift-eels-analysis" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6f282677a33b12b325bf5174bbc3edfe8a34aa5d7e4ad435378d37b81d705e4d
+  sha256: df34ef0aa50cd51931a623f06dda4b03587cefe809b8ae403d14c1798b15d090
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
